@@ -41,8 +41,8 @@ function criaTabuleiro() {
 }
 
 function criaPeca(cor,gm) {
-    let imagem = document.createElement('img');
-		imagem.setAttribute('src', `img/${cor}.png`);
+    let imagem = document.createElement('imagem');
+		imagem.setAttribute('src', `imagem/${cor}.png`);
 		imagem.setAttribute('width', `${tamanhoCelula-4}px`);
 		imagem.setAttribute('height', `${tamanhoCelula-4}px`);
 		imagem.setAttribute('draggable','true');
