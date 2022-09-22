@@ -20,8 +20,8 @@ function criarBotao(){
 	botao.addEventListener('click',function(){
 	
 	});
-	st = document.querySelector(`h${a}`);
-	st.before(botao);
+	s = document.querySelector(`h${a}`);
+	s.before(botao);
 	
 	botao.addEventListener('click', function(event) {
 		if(fontSize <= 170){
@@ -35,8 +35,8 @@ function criarBotao(){
 	botaom.addEventListener('click',function(){
 	});
 
-	st1 = document.querySelector(`h${a}`);
-	st1.before(botaom);
+	s1 = document.querySelector(`h${a}`);
+	s1.before(botaom);
 	
 	botaom.addEventListener('click', function(event) {
 		if(fontSize > 100){
