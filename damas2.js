@@ -41,13 +41,13 @@ function criaTabuleiro() {
     return tabela;
 }
 
-function criaPeca(cor,ws) {
+function criaPeca(cor,gm) {
     let imagem = document.createElement('img');
 		imagem.setAttribute('src', `img/${cor}.png`);
 		imagem.setAttribute('width', `${tamanhoCelula-4}px`);
 		imagem.setAttribute('height', `${tamanhoCelula-4}px`);
 		imagem.setAttribute('draggable','true');
-		imagem.setAttribute('id', ws);
+		imagem.setAttribute('id', gm);
 		imagem.setAttribute('class', cor);
     return imagem;
 }
@@ -76,8 +76,8 @@ function drop(){
 	event.preventDefault();
 	if ( event.target.className == "droptarget") {
 		const data = event.dataTransfer.getData("Text");
-		let w = event.path[0];
-		let e = w.childElementCount;
+		let g = event.path[0];
+		let m = g.childElementCount;
 		lf = event.target.id;
 		let x1 = la.substring(0,1);
 		let y1 = la.substring(2,3);
@@ -98,7 +98,7 @@ function drop(){
 			cc = tx.firstElementChild.className;
 			pc = tx.firstElementChild;
 		}
-		if(e == '0' && y1 != y2) {
+		if(m == '0' && y1 != y2) {
 			if(c == "red" && y1 > y2 && y1 - y2 == 1 || y1 - y2 == 2 && cc == 'black' || c == 'black' && y1 < y2 && y1 - y2 == -1 || y1 - y2 == -2 && cc == 'red') {
 				event.target.appendChild(document.getElementById(data));
 				if(y1 - y2 == 2 || y1 - y2 == -2) {
