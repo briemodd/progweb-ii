@@ -3,7 +3,7 @@ let pecaId = 0;
 let la = 80;
 let lf = 81;
 let c = '';
-let classc= 0;
+let classC = 0;
 let localCaptura = '';
 document.body.append(criaTabuleiro());
 
