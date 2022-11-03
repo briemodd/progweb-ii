@@ -13,9 +13,9 @@
     </style>
 </head>
 <body onload="withDB(carregaTarefas)">
-    <h1>Lista de tarefas</h1>
+    <h1>lista de tarefas</h1>
 
-    <button id="mostraEscondeConcluidos">Mostrar Todas</button>
+    <button id="mostraEscondeConcluidos">mostrar todas</button>
     <script>
         document.querySelector("#mostraEscondeConcluidos").addEventListener( "click", evento => {
             const estilo = document.querySelector("#estiloOculto");
@@ -24,8 +24,8 @@
     </script>
 
     <form action="">
-        <input type="text" id="nt" name="novatarefa" placeholder="Nova tarefa">
-        <input type="submit" value="Inserir">
+        <input type="text" id="nt" name="novatarefa" placeholder="nova tarefa">
+        <input type="submit" value="inserir">
     </form>
     <div id="lista"></div>
     
